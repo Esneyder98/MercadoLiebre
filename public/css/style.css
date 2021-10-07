@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0px
+}
+body{
+    margin: 0%;
+}
+header{
+    background-color: #EAC926;;
+}
+img{
+    width: 40vw;
+    margin: 10px;
+}
+#InputBusqueda{
+    margin: 5px 0px 5px 5px;
+    width:60vw;
+}
+/* div{
+    justify-content: center;
+} */
+.burger-menu{
+    display: flex;
+    justify-content: center;
+}
+.burger-menu #hamburguesa{
+    background-color: #03264C;
+    color: white;
+    text-align: center;
+    padding: 6px;
+    border-radius: 6px;
+    font-size: 2em;
+
+}
+.titulares b{
+    font-size: 24px;
+}
+.precio{
+    font-size: 18px;
+}
+.descuento{
+    font-size: 16px;
+}
+.descripcion{
+    font-size:16px ;
+}
+
+ul{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+.mensaje{
+  text-align: center;  
+}
+
+.nav-principal ul{
+    padding-inline-start: 1px;
+}
+
+.fotter-Icon-i{
+    background-color: white;
+    color: #03264C;
+    font-size: 2em;
+    margin: 10px;
+}
+h3{
+    text-align: center;
+    
+}
+.fotter-icon-tarjeta{
+    display: flex;
+    justify-content: center;
+}
+.fotter-icon-regalo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icon{
+    display: flex;
+    justify-content: center;
+}
+.footer-seccion-p{
+    margin: 0vw 15vh 8vw 15vh;
+    font-size:12px;
+    color:#666;
+    text-align: center;
+    font-weight: bold;
+}
+.Copyright{
+    margin: 5vw 5vh;
+    font-size:12px;
+    text-align: left;
+    color:#b4b2b2;
+    font-weight: bold;
+}
