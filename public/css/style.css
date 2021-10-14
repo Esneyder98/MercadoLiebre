@@ -2,27 +2,39 @@
 *{
     font-family: 'Roboto', sans-serif;
     margin:0px;
-    box-sizing: border-box;
+    padding: 0px;
+    
 }
 
 /* header */
-
+body{
+    background-color: gainsboro;
+}
 header{
     background-color: #EAC926;
     padding:2%
 }
+header .top-header{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+header .top-header .logo{
+    min-width: 40vw;
+}
 header .top-header img{
-    max-width: 80vw;
+    max-width: 40vw;
     margin: 10px;
 }
-header .form #InputBusqueda{
-    margin: 5px 0px 5px 5px;
-    width:60vw;
-    
+header .form{
+    min-width: 40vw;
 }
-header .form,.input, .button{
+
+ header .form,.input, .button{ 
     display:inline-block;
-}
+} 
 header .top-header p{
     text-align: center;
 }
@@ -66,39 +78,57 @@ main{
     margin:auto;
     background-color: gainsboro;
 }
-main {
-    margin:auto;
-}
+
 main .products{
-    width:80%;
-    margin:auto;
+    width:100%;
+    margin:auto; 
 }
 main  .products article{
-    margin: 10px;
-    border:solid 1px  #ebebeb;
+    margin: auto;
+    border: solid 1px #ebebeb;
     padding: 15px;
-    background-color:white;
+    background-color: white;
+    max-width: 230px;
+    margin-bottom: 10px;
+}
+main article .main-article{
+    display: flex;
+    flex-direction: column;
 }
 main  .products img{
     max-width: 100%;
     
 }
+main .products a{
+    display: flex;
+    justify-content: flex-end;
+}
 main .products i{
-    border-radius: 50%;
-    padding: 8px 10px 12px 5px;
     overflow: hidden;
-    border: 1px solid #39b54a;;
-    color:#39b54a;
+    color:#39b54a; 
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border:1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+}
+main section .products div .precio_descuento{
+    display:flex;
 }
 main .precio{
     font-size: 18px;
 }
 .descuento,.descripcion{
     font-size: 16px;
+    padding: 0px 5px;
 }
 main  .products .descuento{
     color:#39b54a;
     padding-bottom: 10px;
+    padding: 0px 5px;
 }
 main .products .descripcion{
     display:none;
@@ -145,31 +175,95 @@ h3{
 }
 
 @media(min-width:361px){
+    *{
+        box-sizing: border-box;
+    }
     /* header */
     header .burger-menu{
         display:none;
     }
-    header .top-header nav{
-        display: block;
+    header .top-header{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: center;
+    
+    }
+    header .top-header .logo{
+        min-width: 30vw;
+    }
+    header .top-header img{
+        max-width: 30vw;
+    }
+    header .form{
+        min-width: 30vw;
+    }
+    header .top-header .form input{
+        max-width:80%;
+        
+    }
+    header .top-header p{
+        font-size: small;
+        
+    }
+    header nav{
+        display: flex;
+        justify-content: space-between;
     }
     header nav ul{
-        display:block;
+        display: flex;
+        justify-content: center;
     }
+    header nav ul{
+        padding-left:0px ;
+        padding-inline-start: 0px;
+    }
+    header nav ul li{
+        font-size: x-small;
+        padding: 5px;
+    }
+
     /* main */
+    main  .products{
+        display:flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        max-width: 600px;
+    }
     main  .products .descripcion{
         display:block;
     }
     main .last-visit .products article{
         box-shadow: 0px 0px 10px rgb(100,100,100);
     }
+    main .products article {
+        max-width: 46%;
+    }
 }
 
 @media(min-width:769px){
     /* header */
+    header .top-header .form input{
+        min-width:85%;
+    }
+    header .top-header p{
+        font-size: medium;
+        
+    }
+    header nav ul li{
+        font-size: medium;
+        padding: 8px;
+    }
 
     /* main */
-   
-    main  .products article{
-        box-shadow: 0px 0px 10px rgb(100,100,100);
+    main  .products{
+        max-width: 1200px;
+    }
+    
+    main .products article {
+        max-width: 23%;
+        margin-top: 10px;
     }
 }
+
+
