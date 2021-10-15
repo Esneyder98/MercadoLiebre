@@ -148,11 +148,58 @@ main .register{
     margin-top:15px;
     display:flex;
     flex-direction: column;
+    width: 90vw;
 }
 
-main .register .box{
-    margin-bottom:15px;
-    padding: 5px
+main .register .box , .button{
+    margin-bottom:35px;
+    padding: 7px;
+    border: 1px solid #ebebeb;
+    border-radius:5px;
+
+}
+
+main .register ::placeholder {
+    color: black;
+  }
+main .register  .subtitulos{
+    font-size: 16px;
+    margin:7px 0px;
+    font-weight:bold;
+}
+
+main .perfil_user{
+    display:flex;
+    justify-content:space-around;
+}
+main .perfil_user label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .perfil_user label input{
+    margin-right: 20px;
+    padding:3px;
+}
+main .register .intereses{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left:8vw;
+}
+main .register .intereses label{
+    margin-bottom: 30px;
+}
+main .register .intereses input{
+    margin-right: 20px;
+}
+main .register #password{
+    margin-top:15px;
+    
+}
+main .register .button{
+    background-color:#03264C;
+    color: white;
 }
 /* fotter */
 .fotter-Icon-i{
@@ -195,7 +242,7 @@ h3{
   margin: auto;
 }
 
-@media(min-width:361px){
+@media(min-width:481px){
     
     /* header */
     header .burger-menu{
@@ -262,6 +309,11 @@ h3{
     main .precio_descuento{
         margin-top: 14px;
     }
+    /* main register */
+    main .register{
+        margin: 15px 10%;
+        width: 80%;
+}
 }
 
 @media(min-width:769px){
