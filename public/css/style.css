@@ -3,6 +3,7 @@
     font-family: 'Roboto', sans-serif;
     margin:0px;
     padding: 0px;
+    box-sizing: border-box;
     
 }
 
@@ -86,38 +87,46 @@ main .products{
 main  .products article{
     margin: auto;
     border: solid 1px #ebebeb;
-    padding: 15px;
+    padding: 15px 0px;
     background-color: white;
     max-width: 230px;
     margin-bottom: 10px;
 }
 main article .main-article{
+    padding: 0px 15px;
     display: flex;
     flex-direction: column;
+    border-top: solid 1.6px #ebebeb ;
 }
 main  .products img{
-    max-width: 100%;
-    
+    max-width: 90%;
+    margin:0% 5%;;
 }
 main .products a{
     display: flex;
     justify-content: flex-end;
+    position: relative;
 }
 main .products i{
-    overflow: hidden;
-    color:#39b54a; 
     display: block;
     font-size: 16px;
     padding: 5px;
     width: 30px;
     height: 30px;
-    border:1px solid #39b54a;
-    background-color: #fff;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
     border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+main .precio_descuento{
+    margin-top: 7px;
 }
 main section .products div .precio_descuento{
     display:flex;
 }
+
 main .precio{
     font-size: 18px;
 }
@@ -132,6 +141,18 @@ main  .products .descuento{
 }
 main .products .descripcion{
     display:none;
+}
+
+/* main register */
+main .register{
+    margin-top:15px;
+    display:flex;
+    flex-direction: column;
+}
+
+main .register .box{
+    margin-bottom:15px;
+    padding: 5px
 }
 /* fotter */
 .fotter-Icon-i{
@@ -175,9 +196,7 @@ h3{
 }
 
 @media(min-width:361px){
-    *{
-        box-sizing: border-box;
-    }
+    
     /* header */
     header .burger-menu{
         display:none;
@@ -238,6 +257,10 @@ h3{
     }
     main .products article {
         max-width: 46%;
+        margin-top: 5arpx;
+    }
+    main .precio_descuento{
+        margin-top: 14px;
     }
 }
 
