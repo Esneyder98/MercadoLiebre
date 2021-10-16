@@ -156,9 +156,11 @@ main .register .box , .button{
     padding: 7px;
     border: 1px solid #ebebeb;
     border-radius:5px;
-
+    background-color:white;
 }
-
+main .register #FechaNacimiento{
+    width: 100%;
+}
 main .register ::placeholder {
     color: black;
   }
@@ -201,7 +203,33 @@ main .register .button{
     background-color:#03264C;
     color: white;
 }
+/* main login */
+main .login{
+    margin: 15px 5%;
+    display:flex;
+    flex-direction: column;
+    width:90%;
+}
+main .login .box , .button{
+    margin-bottom:35px;
+    padding: 7px;
+    border: 1px solid #ebebeb;
+    border-radius:5px;
+
+}
+
+main .login ::placeholder {
+    color: black;
+  }
+
+main .login .button{
+    background-color:#03264C;
+    color: white;
+}
 /* fotter */
+footer{
+    background-color:white;
+}
 .fotter-Icon-i{
     background-color: white;
     color: #03264C;
@@ -313,7 +341,12 @@ h3{
     main .register{
         margin: 15px 10%;
         width: 80%;
-}
+    }
+    /* main login */
+    main .login{
+        margin: 15px 10%;
+        width:80%;
+    }
 }
 
 @media(min-width:769px){
@@ -338,6 +371,17 @@ h3{
     main .products article {
         max-width: 23%;
         margin-top: 10px;
+    }
+
+    /* main register */
+    main .register{
+        margin: 15px 15%;
+        width: 70%;
+    }
+    /* main login */
+    main .login{
+        margin: 15px 15%;
+        width:70%;
     }
 }
 
