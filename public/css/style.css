@@ -114,10 +114,11 @@ main .products i{
     width: 30px;
     height: 30px;
     border: 1px solid #39b54a;
+    color: #39b54a;
     background-color: #FFF;
     border-radius: 50%;
     position: absolute;
-    right: 20px;
+    right: 10px;
     top: -15px;
 }
 main .precio_descuento{
@@ -265,7 +266,7 @@ h3{
     margin: 5vw 5vh;
     font-size:12px;
     text-align: left;
-    color:#b4b2b2;
+    color: #666;
     font-weight: bold;
   margin: auto;
 }
@@ -327,6 +328,7 @@ h3{
     main  .products .descripcion{
         display:block;
     }
+    
     main .last-visit .products article{
         box-shadow: 0px 0px 10px rgb(100,100,100);
     }
@@ -372,16 +374,78 @@ h3{
         max-width: 23%;
         margin-top: 10px;
     }
+    main .last-visit .products article{
+        box-shadow:none;
+        transition:all 700ms;
+    }
+    main .products article:hover{
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
 
+    main .products .main-article a i{
+        transition:all 700ms;
+    }
+    main .products .main-article a:hover i{
+        transform: rotate(-90deg);
+    }
+    main  .products article .descripcion{
+        opacity: 0;
+        transition: all 700ms;
+        
+    }
+    main  .main-article:hover .descripcion{
+        opacity: 1;
+    }
     /* main register */
     main .register{
         margin: 15px 15%;
         width: 70%;
     }
+    main .register .button{
+        transition: all 700ms;
+    }
+    main .register .button:hover{
+        background-color:#0022AA;
+    }
+
     /* main login */
     main .login{
         margin: 15px 15%;
         width:70%;
+    }
+    main .login .button{
+        transition: all 700ms;
+    }
+    main .login .button:hover{
+        background-color:#0022AA;
+    }
+    /* footer  */
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-evenly;
+        position: relative;
+        padding: 40px 25px 60px 25px;
+    }
+    footer .footer-seccion{
+        width: 32%;
+        position: relative;
+    }
+    footer section  div .fotter-Icon-i {
+        transition: all 700ms;
+    }
+    footer section div:hover  .fotter-Icon-i {
+        color:#39b54a;
+    
+    }
+    footer .footer-seccion-p {
+        margin:3px;
+    }
+    footer .copyright{
+        position: absolute;
+        bottom: 15px;
+        left:25px
     }
 }
 
